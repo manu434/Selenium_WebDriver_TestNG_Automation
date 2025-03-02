@@ -18,14 +18,15 @@ public class New_window_Tab {
 	@BeforeMethod
 	public void bm() {
 		driver.manage().window().maximize();
+		driver.switchTo().newWindow(WindowType.WINDOW);
 		driver.get("https://www.google.com/");
 	}
 
 	@Test
 	public void test() {
-		WebDriver driver1 = driver.switchTo().newWindow(WindowType.TAB);
-		WebDriver driver2 = driver.switchTo().newWindow(WindowType.WINDOW);
-		driver.close();
+		// WebDriver driver1 = driver.switchTo().newWindow(WindowType.TAB);
+		// WebDriver driver2 = driver.switchTo().newWindow(WindowType.WINDOW);
+		// driver.close();
 
 	}
 
